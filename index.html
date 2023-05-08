@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="heading"><h1></h1></div>
+    <main>
+            </div>
+            <div id="scale"><div id="arrows">
+                <button id="lewo"><span class="arrow"></span></button>
+                <ul id="list">
+                    
+
+                  </ul>
+            <button id="prawo"><span class="arrow"></span></button></div>
+            </div>
+
+        </div>
+    </main>  
+</body>
+</html>
+<style>
+body{
+    padding-top:15%;
+}
+main{
+    padding-top:20px;
+}
+#heading,p{
+        text-align:center;
+    padding:40px;
+    font-size: 3em;
+  }
+li {
+  border: 5px solid black;
+  padding: .5em;
+  flex-basis:100%;
+  width: 1%;
+  text-align:center;
+  padding:30px;
+  display:inline-block;
+}
+#scale{
+    
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    width:100%;
+    align-items:center;
+    align-content:space-around;
+}
+ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0 auto;
+}
+#prawo,
+#lewo {
+    background-color:white;
+    padding:10px;
+    border:none;
+    cursor: pointer;
+}
+
+.arrow {
+display: block;
+position:relative;
+  width: 15px;
+  height: 15px;
+  border-top: 5px solid #000;
+  border-left: 5px solid #000;
+  
+  transform: rotate(135deg);
+}
+#lewo > .arrow{
+    transform: rotate(-45deg);
+}
+    li:nth-child(2),
+      li:nth-child(4),
+      li:nth-child(7),
+      li:nth-child(9),
+      li:nth-child(11) {
+        background-color: black;
+      }
+
+</style>
